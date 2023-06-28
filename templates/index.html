@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de texto</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reconocimiento de texto en imágenes</h1>
+    </header>
+    <main>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="image-upload" class="upload-label">
+                <span class="upload-text">Seleccionar imagen</span>
+                <input type="file" id="image-upload" name="image" accept="image/*">
+            </label>
+            <button type="submit" class="upload-button">Subir imagen</button>
+        </form>
+    </main>
+    <footer>
+        <p>Desarrollado por Pablo Riva</p>
+    </footer>
+</body>
+</html>
+
