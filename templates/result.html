@@ -8,13 +8,19 @@
 </head>
 <body>
     <header>
-        <h1>Resultado</h1>
+        <h1>Reconocimiento de texto en imágenes</h1>
     </header>
     <main>
-        <div id="result-container">
-          <p>{{ text }}</p>
-        </div>
+        <h2>Resultado</h2>
+        <p>Cantidad de líneas de texto identificadas: {{ line_count }}</p>
+        <p>Contenido del texto reconocido:</p>
+        <pre>{{ text }}</pre>
+        <p>Primeras palabras más utilizadas:</p>
+        <ul>
+            {% for word, count in top_words %}
+                <li>{{ word }} - {{ count }} veces</li>
+            {% endfor %}
+        </ul>
     </main>
 </body>
 </html>
-
